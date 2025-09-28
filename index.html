@@ -28,8 +28,6 @@
 
     <div id="particles-js"></div>
 
-    <div id="toast-notification" class="toast-notification"></div>
-    
     <div class="theme-switcher">
         <button id="theme-toggle-button" aria-label="Toggle Theme"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></button>
     </div>
@@ -51,14 +49,14 @@
                 <div class="input-container">
                     <i class="fas fa-barcode"></i>
                     <div class="input-wrapper">
-                        <input type="text" id="memberCodeInput" placeholder="[ Enter Member Code ]">
+                        <input type="text" id="memberCodeInput" placeholder="[ Enter Member Code ]" autocomplete="off" spellcheck="false" maxlength="20">
                         <span id="input-caret" class="caret"></span>
                     </div>
                 </div>
                 <button id="analyze-button" class="cybr-btn">ANALYZE<span aria-hidden>_</span></button>
                 <a href="https://forms.gle/WQxsNjX2XX8PNa9w8" target="_blank" rel="noopener" class="complaint-button">File a Complaint</a>
                 
-                <div class="social-links">
+                <div class="social-links" role="navigation" aria-label="Social media links">
                     <a href="https://www.facebook.com/Students.union.long.live.eg/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://forms.tahyamisrsu.com/" target="_blank" rel="noopener" aria-label="Event Registration"><i class="fas fa-file-signature"></i></a>
                     <a href="https://eg.linkedin.com/company/students-union-long-live-eg" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -83,7 +81,7 @@
     
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 
     <div id="image-modal" class="image-modal">
         <span class="close-modal-btn">×</span>
